@@ -40,8 +40,9 @@ the plugin will not render the value.
 
 Below screenshoot is from the sample table.
 
-[Sample Screenshoot](sample.png)
-![](sample.png)
+[Sample Screenshoot](https://github.com/kracekumar/datasette-render-local-images/blob/main/sample.png)
+
+![](https://github.com/kracekumar/datasette-render-local-images/blob/main/sample.png)
 
 ## Development
 
