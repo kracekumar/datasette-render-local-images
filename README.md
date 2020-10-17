@@ -16,6 +16,8 @@ Install this plugin in the same environment as Datasette.
 ## Usage
 
 Render local system images in the datasette displayed HTML.
+The plugin reads the image and adds the base64 encoded data to `src` attribute,
+the cell looks like `<img src="data:image/png;base64,A.." height="-1" width="-1">`
 
 By default plugin will figure out image and render with
 default height and width of the image.
@@ -35,6 +37,10 @@ To modify the image size and width, pass the configuration via `metadata.json`
 
 When the local image path is missing or no image specified in the path,
 the plugin will not render the value.
+
+Below screenshoot is from the sample table.
+
+[Sample Screenshoot](sample.png)
 
 ## Development
 
