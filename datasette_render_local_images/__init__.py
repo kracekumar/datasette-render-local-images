@@ -7,7 +7,6 @@ import jinja2
 
 def get_size_to_render(plugin_config):
     """Get size to render an image."""
-    print(plugin_config)
     height = plugin_config.get("height", -1)
     width = plugin_config.get("width", -1)
     return height, width
