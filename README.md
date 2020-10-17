@@ -41,6 +41,7 @@ the plugin will not render the value.
 Below screenshoot is from the sample table.
 
 [Sample Screenshoot](sample.png)
+![](sample.png)
 
 ## Development
 
