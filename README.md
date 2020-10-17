@@ -27,7 +27,7 @@ To modify the image size and width, pass the configuration via `metadata.json`
 ``` python
 {
     "plugins": {
-        "datasette-render-images": {
+        "datasette-render-local-images": {
             "height": 150,
             "width": 150
         }
