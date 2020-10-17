@@ -38,6 +38,9 @@ To modify the image size and width, pass the configuration via `metadata.json`
 When the local image path is missing or no image specified in the path,
 the plugin will not render the value.
 
+**Note**: While running datasette command don't forget to pass the metadata file
+using `-m` option like `datasette dataset.db -m metadata.json`.
+
 Below screenshoot is from the sample table.
 
 [Sample Screenshoot](https://github.com/kracekumar/datasette-render-local-images/blob/main/sample.png)
