@@ -33,7 +33,7 @@ def ds(tmp_path_factory):
             },
             {
                 "id": 4,
-                "name": "Are Prisons Absolute?",
+                "name": "Are Prisons Obsolete?",
                 "author": "Angela Davis",
                 "author_image": "tests/images/Angela_Davis_Moscow_1972_cropped.jpg",
             },
