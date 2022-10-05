@@ -47,6 +47,22 @@ Below screenshoot is from the sample table.
 
 ![](https://github.com/kracekumar/datasette-render-local-images/blob/main/sample.png)
 
+## Only apply to specific column names 
+
+Optionally create a list of column names that this should apply to (ignoring other columns).
+
+``` python
+{
+    "plugins": {
+        "datasette-render-local-images": {
+            "height": 150,
+            "width": 150,
+            "column_names": ["profile_pic", "alternate_pic"]
+        }
+    }
+}
+```
+
 ## Development
 
 To set up this plugin locally, first checkout the code. Then create a new virtual environment:

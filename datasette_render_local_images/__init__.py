@@ -14,6 +14,8 @@ def get_size_to_render(plugin_config):
 
 def get_local_path(value):
     """Get local path for the value."""
+    if not isinstance(value, str):
+        return ""
     value = Path(value)
     # Return if exists and a file
     if value.exists() and value.is_file():
@@ -22,12 +24,17 @@ def get_local_path(value):
 
 
 @hookimpl
-def render_cell(value, datasette):
+def render_cell(value, column, datasette):
     """Render local image in any cell.
     """
     if datasette:
         plugin_config = datasette.plugin_config("datasette-render-local-images") or {}
         height, width = get_size_to_render(plugin_config)
+        column_names = plugin_config.get("column_names")
+
+    #If column name isn't listed as image path, skip
+    if column_names and column not in column_names:
+        return None
 
     # If the path exists then go ahead
     path = get_local_path(value)
