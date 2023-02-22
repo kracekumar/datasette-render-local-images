@@ -14,6 +14,9 @@ def get_size_to_render(plugin_config):
 
 def get_local_path(value):
     """Get local path for the value."""
+    if type(value) not in [str, bytes, os.PathLike]:
+        return None
+
     value = Path(value)
     # Return if exists and a file
     if value.exists() and value.is_file():
